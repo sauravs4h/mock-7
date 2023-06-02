@@ -1,5 +1,5 @@
 const mongoose=require("mongoose");
 
-const connection=mongoose.connect("mongodb+srv://sauravsh:sauravsharma@cluster0.lb7eutx.mongodb.net/mock-7?retryWrites=true&w=majority");
+const connection=mongoose.connect(process.env.MONGO_URL);
 
 module.exports={connection}
